@@ -19,14 +19,22 @@ h2 {
 }
 div.buttons {
   display: flex;
-  background: none;
+  background: green;
   justify-content: space-between;
-  gap: 5px;
+  gap: 1px;
   width: auto;
+  padding: 1px;
 }
 div.buttons button {
   width: 50%;
   outline: 0;
   border: 0;
   padding: 9px 0;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 20px;
+}
+div.buttons button:hover {
+  background: yellow;
+  color: white;
 }
