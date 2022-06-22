@@ -9,18 +9,42 @@
   </head>
   <body>
     <div class="content">
-      <h2>Login Form</h2>
+      <h2 class="header">Login Form</h2>
       <div class="buttons">
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button type="submit" class="loginButton">Login</button>
+        <button type="submit" class="signButton">Sign Up</button>
       </div>
-      <form action="" target="-_self" method="post">
-        <input type="text" name="email" placeholder="Email Address" />
-        <input type="password" name="password" placeholder="Password" />
-        <a href="#">Forget Password</a>
-        <button type="submit">Login</button>
-      </form>
-      <p>Not a member? <a href="#">Signup now</a></p>
+
+      <!-- login display -->
+      <div class="view-login">
+        <div class="info">
+          <form action="" target="-_self" method="post">
+            <input type="text" name="email" placeholder="Email Address" />
+            <input type="password" name="password" placeholder="Password" />
+            <a href="#">Forget Password</a>
+            <button type="submit">Login</button>
+          </form>
+          <div class="visit">
+            <p>Not a member? <a href="#">Signup now</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- signup display -->
+      <div class="view-sign">
+        <div class="sign">
+          <form action="" target="-_self" method="post">
+            <input type="text" name="name" placeholder="Full Name" />
+            <input type="email" name="email" placeholder="Email Address" />
+            <input type="password" name="password" placeholder="Password" />
+            <button type="submit">Sign Up</button>
+          </form>
+          <div class="visit">
+            <p>Are you a member? <a href="#">Login now</a></p>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

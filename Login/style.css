@@ -3,38 +3,110 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-image: linear-gradient(-135deg, purple, pink);
+  background-repeat: no-repeat;
+  height: 86.2vh;
+}
 div.content {
-  background: red;
-  padding: 100px;
+  background: white;
+  padding: 15px 10px;
   width: 50%;
-  margin: 50px auto 0 auto;
-  height: 80vh;
+  margin: 100px auto 0 auto;
+  /* height: 80vh; */
   border-radius: 20px;
+  box-shadow: 0 0 10px 0 red;
 }
 h2 {
-  color: white;
+  color: black;
   margin: 10px 0;
   text-align: center;
   font-size: 30px;
 }
 div.buttons {
   display: flex;
-  background: green;
+  background: none;
   justify-content: space-between;
-  gap: 1px;
+  gap: 2px;
   width: auto;
   padding: 1px;
+  margin: 0 auto;
+  width: 93%;
 }
 div.buttons button {
   width: 50%;
-  outline: 0;
+  color: white;
+  background-image: linear-gradient(-135deg, purple, pink);
+  outline: 1px solid grey;
   border: 0;
-  padding: 9px 0;
+  padding: 12px 0;
   border-radius: 5px;
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 25px;
+}
+div.buttons button:last-child {
+  background: white;
+  color: black;
 }
 div.buttons button:hover {
-  background: yellow;
+  background-image: linear-gradient(180deg, pink, purple);
   color: white;
 }
+div.info,
+div.sign {
+  background: none;
+  width: auto;
+  display: block;
+  padding: 0 20px;
+}
+
+div.view-login {
+  display: block;
+}
+div.view-sign {
+  display: none;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 20px;
+  border: 0;
+  outline: 1px solid grey;
+  border-radius: 10px;
+  line-height: 3rem;
+}
+input::placeholder {
+  padding: 0 10px;
+  color: lightgray;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  background: -webkit-linear-gradient(pink, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form > button {
+  background-image: linear-gradient(-135deg, purple, pink);
+  width: 100%;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 20px;
+  border: 0;
+  outline: 1px solid grey;
+  border-radius: 10px;
+  line-height: 3rem;
+  color: white;
+  font-size: 25px;
+}
+div.visit {
+  background: none;
+  text-align: center;
+  padding: 5px 0;
+  margin: 30px auto;
+  font-size: 22px;
+}
+
+/* css for sign up */
