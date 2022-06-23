@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("/home/codeliter/Downloads/IMG_20220622_155401_BURST1.jpg");
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+/* header */
+div.header {
+  padding: 10px;
+  background: dodgerblue;
+  border-bottom: 2px solid black;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+div.header > div {
+  margin: 0 10px;
+  /* background: red; */
+}
+div.header-first {
+  background: none;
+  display: inherit;
+  width: 20%;
+}
+div.header-first > a {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  font-weight: 600;
+}
+div.header-first > a:hover {
+  padding: 14px;
+  margin: 0 5px;
+  background: rgb(61, 61, 224);
+  border-radius: 10px;
+}
+div.header-second {
+  background: none;
+  width: 40%;
+}
+div.header-second input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0;
+}
+form {
+  display: flex;
+}
+.header-second button {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+div.header-second input:focus {
+  outline: 1px solid grey;
+  border: 0;
+}
+div.header-third {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+div.header-third > button {
+  color: white;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+div.header-third > img {
+  width: 15%;
+  outline: 0;
+  border: 0;
+  border-radius: 50%;
+}
+img {
+  width: 20%;
+  border-radius: 5px;
+}
+
+/* body content */
+div.body {
+  display: flex;
+  background: none;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  height: fit-content;
+  justify-content: space-between;
+  gap: 20px;
+}
+div.body > div {
+  display: grid;
+}
+
+/* left sidebar */
+div.left-sidebar {
+  background: none;
+  overflow-y: scroll;
+  padding: 0;
+  height: 88vh;
+  width: 20%;
+}
+div.left-sidebar::-webkit-scrollbar {
+  display: none;
+}
+div.left-top-sidebar {
+  background: dodgerblue;
+  margin: 0 0 20px 0;
+  padding: 0;
+  border-radius: 10px;
+}
+div.profile {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+  padding: 0 25px;
+  background: none;
+}
+div.profile > img {
+  height: 10vh;
+  margin: 10px 0;
+  width: 10vh;
+  border-radius: 50%;
+}
+div.profile > span {
+  background: none;
+  padding: 20px 0;
+}
+div.profile span > * {
+  color: white;
+  margin: 0 auto;
+}
+hr {
+  outline: 1px solid white;
+  border: 0;
+  margin: 10px 5px;
+}
+div.left-top-sidebar > a {
+  display: grid;
+  text-decoration: none;
+  padding: 0 25px;
+  color: white;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+div.left-top-sidebar > a:last-child {
+  margin: 0 0 20px 0;
+}
+div.left-top-sidebar > button {
+  background: rgb(45, 106, 167);
+  width: 100%;
+  outline: 0;
+  border: 0;
+  padding: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+}
+div.left-bottom-sidebar {
+  background: white;
+  padding: 10px 0 0 0;
+  border-radius: 10px;
+}
+div.left-bottom-sidebar > span {
+  display: flex;
+  gap: 30px;
+  padding: 0 25px;
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+div.gallery > img {
+  border-radius: 0;
+}
+/* body content */
+
+div.body-content {
+  background: none;
+  width: 45%;
+  height: 88vh;
+  overflow-y: scroll;
+}
+div.body-content::-webkit-scrollbar {
+  display: none;
+}
+div.searches {
+  background: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+div.top-searches {
+  background: none;
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+div.top-searches img {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+}
+div.top-searches p {
+  margin: 15px 5px;
+  font-size: 10px;
+}
+div.searches input {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid rebeccapurple;
+  padding: 10px 5px;
+  margin: 0 0 10px 0;
+}
+div.more-searches {
+  display: none;
+  /* flex-direction: row; */
+  /* width: 79vh; */
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  background: rebeccapurple;
+}
+div.more-searches::-webkit-scrollbar {
+  display: none;
+}
+div.more-searches > button {
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+div.stories {
+  margin: 10px 0;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+div.stories p {
+  margin: 10px 0;
+}
+div.image-stories {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  gap: 10px;
+}
+div.image-stories::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+div.image-stories > img {
+  width: 35%;
+  height: 30vh;
+}
+div.post {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+div.post > p {
+  color: black;
+  font-size: 10px;
+}
+div.post img {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 0;
+  height: 20vh;
+}
+div.user-post {
+  display: flex;
+  justify-content: space-between;
+}
+div.user-post > span {
+  color: black;
+  font-size: 8px;
+}
+div.user-post-info {
+  display: flex;
+}
+div.user-post-info > img {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+}
+div.user-post-info > span {
+  word-wrap: normal;
+  word-break: keep-all;
+  font-size: 10px;
+  margin: 20px 5px;
+}
+div.user-post-info > span > * {
+  margin: 5px 0;
+  color: blue;
+}
+div.reactions {
+  background: none;
+  padding: 5px;
+}
+
+div.reactions > a {
+  background: none;
+  text-decoration: none;
+  color: white;
+  /* letter-spacing: -5px; */
+  margin: 0;
+}
+div.reactions hr {
+  outline: 1px solid lightgray;
+  border: 0;
+  margin: 10px 1px;
+}
+div.active-reactions {
+  display: flex;
+  justify-content: space-between;
+}
+div.active-reactions > a {
+  text-decoration: none;
+  color: black;
+}
+div.active-reactions a > i {
+  color: lightblue;
+  margin: 0 10px;
+}
+
+/* body info */
+div.body-info {
+  background: none;
+  overflow: scroll;
+  height: 88vh;
+  width: 20%;
+  border-radius: 10px;
+}
+div.body-info::-webkit-scrollbar {
+  display: none;
+}
+div.friend-request {
+  background: white;
+  margin: 0 0 20px 0;
+  height: 55vh;
+  border-radius: 10px;
+}
+div.friend-request input {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid rebeccapurple;
+  padding: 15px 10px;
+  margin: 0 0 10px 0;
+}
+div.friend-request > span {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid rebeccapurple;
+}
+div.friend-request > span > p {
+  color: blue;
+  font-size: 20px;
+}
+div.friend-request > span > a {
+  text-decoration: none;
+  color: black;
+}
+div.friends-list {
+  background: white;
+  overflow-y: scroll;
+  border-radius: 0 0 10px 10px;
+  height: inherit;
+}
+div.friends-list::-webkit-scrollbar {
+  display: none;
+}
+div.friends-list > button {
+  display: flex;
+  background: none;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  outline: 0;
+}
+div.friends-list > button img {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+}
+div.friends-list > button p {
+  margin: 25px 10px;
+  font-weight: 600;
+}
+header.classify {
+  padding: 10px;
+  background: dodgerblue;
+  height: fit-content;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  margin: 100px 0 20px 0;
+}
+div.classify-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: none;
+  height: auto;
+  padding: 10px 0 0 0;
+  justify-content: space-between;
+}
+div.classify-images > img {
+  border-radius: 10px;
+  width: 48%;
+  height: 40%;
+}
+
+div.right-sidebar {
+  width: 20%;
+  display: none;
+  visibility: hidden;
+  background: yellow;
+  /* overflow-y: scroll; */
+}
