@@ -2,11 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 body {
-  background: url("/home/codeliter/Downloads/IMG_20220622_155401_BURST1.jpg");
+  /* background: url("/home/codeliter/Downloads/IMG_20220622_155401_BURST1.jpg"); */
   background-repeat: no-repeat;
   overflow-y: scroll;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background: purple;
+  }
 }
 body::-webkit-scrollbar {
   width: 5px;
@@ -283,6 +289,11 @@ div.image-stories {
   justify-content: space-between;
   gap: 10px;
 }
+div.image-stories > img:hover {
+  width: 35.5%;
+  height: 30.5vh;
+  cursor: pointer;
+}
 div.image-stories::-webkit-scrollbar {
   visibility: hidden;
 }
@@ -305,7 +316,7 @@ div.post img {
   margin: 10px 0;
   width: 100%;
   border-radius: 0;
-  height: 20vh;
+  height: 100vh;
 }
 div.user-post {
   display: flex;
@@ -460,3 +471,5 @@ div.right-sidebar {
   background: yellow;
   /* overflow-y: scroll; */
 }
+
+/* add more to stories */
