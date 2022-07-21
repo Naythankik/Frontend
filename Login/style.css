@@ -27,7 +27,7 @@ div.buttons {
   display: flex;
   background: none;
   justify-content: space-between;
-  gap: 2px;
+  gap: 10px;
   width: auto;
   padding: 1px;
   margin: 0 auto;
