@@ -211,7 +211,8 @@ div.gallery {
   margin: 10px 0 0 0;
 }
 div.gallery > img {
-  border-radius: 0;
+  border-radius: 5px;
+  margin: 3px;
 }
 /* body content */
 
@@ -460,6 +461,7 @@ div.classify-images {
 }
 div.classify-images > img {
   border-radius: 10px;
+  margin: 5px 0;
   width: 48%;
   height: 40%;
 }
